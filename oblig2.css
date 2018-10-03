@@ -1,0 +1,130 @@
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header header header"
+        "nav nav nav"
+        "main main aside"
+        "articale articale articale"
+        "footer footer footer";
+    max-width: 80%;
+    margin: 0 auto;
+   
+}
+header{
+    grid-area: header;
+    background-image: url("https://cdn.pixabay.com/photo/2016/04/15/04/02/water-1330252__340.jpg");
+    background-size: cover;
+    height:140px ;
+    display: grid;
+    grid-template-rows: 75% 25%;
+
+
+}
+nav{
+    grid-area: nav;
+    
+    
+
+}
+nav ul{
+    display: grid;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 11px;
+    background-color: black;
+    width: 100%;
+    margin-top: 0px;
+
+}
+nav ul li{
+    font-variant: small;
+    margin: 0 2px;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+}
+main{
+    grid-area: main;
+    display: flex;
+    
+
+}
+.artikkel{
+   
+    flex-direction: column;
+}
+img{
+    max-width: 100px;
+}
+aside{
+    grid-area: aside;
+    
+}
+.asidesection{
+    width:350px;
+    margin-top: 50px;
+    grid-area: aside;
+ }
+  
+ .asidesection a {
+     background-color: brown;
+     color: black;
+     display: block;
+     padding: 12px;
+     text-decoration: none;
+ }
+
+  
+    
+article{
+    grid-area: articale;
+
+}
+figure img {
+    width: 150px;
+    border-spacing: 15px;
+}
+footer{
+    grid-area: footer;
+}
+.foter{
+    position:fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: red;
+     color: white;
+     text-align: center;
+     margin-top: 20px;
+}
+header{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 11px;
+    background-color: black;
+    width: 100%;
+
+}
+nav ul li{
+    font-variant: small;
+    margin: 0 2px;
+}
+
+nav ul li{
+    text-decoration: none;
+    padding: 10px 30px;
+    display: inline-block;
+}
